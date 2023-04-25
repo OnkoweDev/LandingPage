@@ -19,6 +19,7 @@ import AppCommunityCard from "../components/community-card";
 import AppPricingCard from "../components/pricing";
 import AppFaq from "../components/faq";
 import AppNewsLetter from "../components/newsletter";
+import AppFooterSection from "../components/footer";
 
 const Home = () => {
   const communityUsers = [
@@ -233,9 +234,15 @@ const Home = () => {
             accordionHeader={"How does your pricing work?"}
           ></AppFaq>
         </section>
-        <br/><br/>
+        <br />
+        <br />
         <section className="newsletter-container container m-auto ">
           <AppNewsLetter></AppNewsLetter>
+        </section>
+        <section className="my-5 py-5"></section>
+
+        <section className="footer-section-container container">
+          <AppFooterSection />
         </section>
       </section>
     </React.Fragment>
