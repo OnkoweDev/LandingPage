@@ -61,6 +61,10 @@
 {
   border:none;
 }
+.header-dropdown
+{
+  border: 1px solid var(--brand-white-color);
+}
 .header-dropdown > li
 {
   transition:.7s;
