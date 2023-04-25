@@ -16,3 +16,67 @@
   font-family:Poppins !important;
 }
 
+
+:root{
+    --brand-primary-color:#000000;
+    --brand-secondary-color:#2A5BD7;
+    --brand-button-border-radius: 30px;
+    --brand-white-color:#FCFCFC;
+    --brand-small-text: 0.65rem;
+    --brand-small-text-2: 0.8rem;
+}
+
+
+
+/* utility classes for site background */
+.brand-primary-bg-color
+{
+  background: var(--brand-primary-color);
+}
+
+
+/* utility classes for site texts */
+.brand-small-text
+{
+  font-size: var(--brand-small-text) !important;
+}
+
+.brand-small-text-2
+{
+  font-size: var(--brand-small-text) !important;
+}
+.brand-white-text
+{
+  color: var(--brand-white-color) !important;
+}
+.header-dropdown > li
+{
+  transition:.7s;
+}
+.header-dropdown > li :hover{
+  background: var(--brand-secondary-color);
+}
+
+/* utility classes for site buttons */
+.brand-custom-button
+{
+  background: var(--brand-secondary-color) !important;
+  outline:none !important;
+  border: 2px solid var(--brand-secondary-color) !important;
+  border-radius:var(--brand-button-border-radius);
+}
+
+.brand-custom-button-outline
+{
+  background:var(--brand-primary-color);
+  border:2px solid var(--brand-white-color);
+  border-radius: var(--brand-button-border-radius);
+  transition:.9s;
+}
+
+.brand-custom-button-outline:hover
+{
+  background:var(--brand-secondary-color) !important;
+
+}
+
