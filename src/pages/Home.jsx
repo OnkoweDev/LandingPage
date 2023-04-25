@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import AppHeader from "../components/header";
 import AppHero from "../components/hero";
 import ProductImg from "./../assets/product.svg";
@@ -20,9 +20,16 @@ import AppPricingCard from "../components/pricing";
 import AppFaq from "../components/faq";
 import AppNewsLetter from "../components/newsletter";
 import AppFooterSection from "../components/footer";
-
-const Home = () => {
-  const communityUsers = [
+import AOS from "aos";
+const Home = () => {  
+  
+  /*Init the AOS library */
+  useEffect(()=>{
+    
+    AOS.init();
+    
+  }, []);
+ const communityUsers = [
     {
       id: 1,
       name: "Jessica",
@@ -100,6 +107,8 @@ const Home = () => {
             image={ProductImg}
             headerText={"product description generator"}
             className="mx-3 my-3"
+            data-aos="slide-right"
+            data-aos-duration="1200"
           >
             <p className="px-1 brand-small-text-3 text-muted">
               With so much that has to be done almost at the same time , it
@@ -119,6 +128,8 @@ const Home = () => {
             image={LandingPageImg}
             headerText={"landing page content generator"}
             className="mx-3 my-3"
+            data-aos="slide-left"
+            data-aos-duration="1200"
           >
             <p className="px-1 brand-small-text-3 text-muted">
               The goal every of every marketer is for their marketing campaign
@@ -140,7 +151,11 @@ const Home = () => {
             subHeroImage={IpadImg}
             className={"my-5 py-4"}
           >
-            <p className="px-1 brand-small-text-3 text-muted">
+            <p
+              className="px-1 brand-small-text-3 text-muted"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               Thousand of writers, bloggers, and marketers can rapidly create
               100% original books with Olukowe’s Ebook authoring platform and
               additionally, we’ll help you with the book publishing procedure.
@@ -154,7 +169,11 @@ const Home = () => {
             headerText="Finally, Writing is no longer a challenging task."
             subHeroImage={GirlWithLaptopImg}
           >
-            <p className="px-1 brand-small-text-3 text-muted">
+            <p
+              className="px-1 brand-small-text-3 text-muted"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               Working with a team makes work easier and accelerates the time
               taken to get a project completed . Do you want to delegate parts
               of a whole project to members of your team and make them work on
@@ -164,15 +183,27 @@ const Home = () => {
               removed while working with a team on real-time writing projects.
             </p>
 
-            <Button className="brand-custom-button text-capitalize brand-small-text-3 px-3 my-4">
+            <Button
+              className="brand-custom-button text-capitalize brand-small-text-3 px-3 my-4"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
               learn more
             </Button>
           </AppSubHeroSection>
         </section>
-        <h3 className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2">
+        <h3
+          className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2"
+          data-aos="slide-up"
+          data-aos-duration="200"
+        >
           Hear What The Community of Users Has To Say
         </h3>
-        <section className="container">
+        <section
+          className="container"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
           <section className="community-section row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {allUsersCommentAndRating && allUsersCommentAndRating}
           </section>
@@ -184,14 +215,22 @@ const Home = () => {
         </h3>
         <section className="pricing-container container p-md-0 p-4">
           <section className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <AppPricingCard cardTitle="free plan">
+            <AppPricingCard
+              cardTitle="free plan"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
               <section className="my-5 py-5">
                 <br />
                 <br />
               </section>
             </AppPricingCard>
 
-            <AppPricingCard cardTitle="paid plan">
+            <AppPricingCard
+              cardTitle="paid plan"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
               <section className="my-5 py-5">
                 <br />
                 <br />
@@ -205,7 +244,11 @@ const Home = () => {
           frequently asked questions
         </h3>
 
-        <section className="container faq-container brand-primary-bg-color width-toggle-3">
+        <section
+          className="container faq-container brand-primary-bg-color width-toggle-3"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <AppFaq
             eventKey={"0"}
             accordionHeader={"How many people can I share my writing with?"}
@@ -236,7 +279,11 @@ const Home = () => {
         </section>
         <br />
         <br />
-        <section className="newsletter-container container m-auto ">
+        <section
+          className="newsletter-container container m-auto "
+          data-aos="flip-up"
+          data-aos-duration="600"
+        >
           <AppNewsLetter></AppNewsLetter>
         </section>
         <section className="my-5 py-5"></section>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-const AppPricingCard = ({cardTitle, children, className}) => {
+const AppPricingCard = ({cardTitle, children, className, ...others}) => {
   return (
     <React.Fragment>
-        <section className={`pricing-card card brand-primary-bg-color m-auto mt-4 d-flex align-items-center justify-content-center flex-column ${className}`}>
+        <section className={`pricing-card card brand-primary-bg-color m-auto mt-4 d-flex align-items-center justify-content-center flex-column ${className}`} {...others}>
             <h4 className="fs-4 fw-bold brand-white-text text-capitalize text-center my-4">{cardTitle}</h4>
             
             <section>

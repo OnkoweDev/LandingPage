@@ -7,8 +7,9 @@ const AppHeader = () => {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-lg navbar-dark brand-primary-bg-color "
+        className="navbar navbar-expand-lg navbar-dark brand-primary-bg-color"
         aria-label="Olukowe Header"
+        
       >
         <div className="container-fluid mx-md-4 m-3">
           <img
