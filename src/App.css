@@ -16,6 +16,10 @@
   font-family:Poppins !important;
 }
 
+html, body{
+  background: var(--brand-primary-color) !important;
+}
+
 
 :root{
     --brand-primary-color:#000000;
@@ -23,6 +27,7 @@
     --brand-button-border-radius: 30px;
     --brand-white-color:#FCFCFC;
     --brand-small-text: 0.65rem;
+    --brand-small-text-3: 0.84rem;
     --brand-small-text-2: 1.1rem;
 }
 
@@ -44,6 +49,11 @@
 .brand-small-text-2
 {
   font-size: var(--brand-small-text-2) !important;
+}
+
+.brand-small-text-3
+{
+  font-size: var(--brand-small-text-3) !important;
 }
 .brand-white-text
 {
@@ -106,6 +116,11 @@
 
 }
 
+
+.user-case-container{
+  border: 2px solid var(--brand-white-color);
+  border-radius:16px;
+}
 
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import AppHeroImage from "./../assets/hero-img.svg";
 import { Button } from "react-bootstrap";
+import AppHeroWave from "./../assets/hero-wave.svg";
 const AppHero = () => {
   return (
     <React.Fragment>
@@ -39,6 +40,9 @@ const AppHero = () => {
           </div>
         </div>
       </div>
+      <section>
+      <img src={AppHeroWave} className="w-100 h-100 m-0 p-0" alt="hero wave section"/>
+      </section>
     </React.Fragment>
   );
 };
