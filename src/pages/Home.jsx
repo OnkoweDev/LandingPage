@@ -17,7 +17,7 @@ import DemoImg5 from "./../assets/demo-5.svg";
 import DemoImg6 from "./../assets/demo-3.svg";
 import AppCommunityCard from "../components/community-card";
 import AppPricingCard from "../components/pricing";
-
+import AppFaq from "../components/faq";
 const Home = () => {
   const communityUsers = [
     {
@@ -174,9 +174,9 @@ const Home = () => {
             {allUsersCommentAndRating && allUsersCommentAndRating}
           </section>
         </section>
-        <br/>
+        <br />
 
-        <h3 className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2">
+        <h3 className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-5 my-4 py-md-3 py-2">
           pricing
         </h3>
         <section className="pricing-container container p-md-0 p-4">
@@ -195,6 +195,41 @@ const Home = () => {
               </section>
             </AppPricingCard>
           </section>
+        </section>
+        <br />
+        <br />
+        <h3 className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2">
+          frequently asked questions
+        </h3>
+
+        <section className="container faq-container brand-primary-bg-color">
+          <AppFaq
+            eventKey={"0"}
+            accordionHeader={"How many people can I share my writing with?"}
+            className=""
+          ></AppFaq>
+
+          <AppFaq
+            eventKey={"1"}
+            accordionHeader={
+              "If I subscribe to a monthly plan, will I be charged automatically next month?"
+            }
+          ></AppFaq>
+          <AppFaq
+            eventKey={"2"}
+            accordionHeader={
+              "How is the pricing of Olukowe compare with Jasper?"
+            }
+          ></AppFaq>
+          <AppFaq
+            eventKey={"3"}
+            accordionHeader={"Can I translate with Olukowe?"}
+          ></AppFaq>
+
+          <AppFaq
+            eventKey={"4"}
+            accordionHeader={"How does your pricing work?"}
+          ></AppFaq>
         </section>
       </section>
     </React.Fragment>

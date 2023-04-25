@@ -121,7 +121,6 @@ html, body{
 .brand-custom-button-outline:hover
 {
   background:var(--brand-secondary-color) !important;
-
 }
 
 
@@ -134,6 +133,41 @@ html, body{
 {
   border-radius: var(--brand-button-border-radius);
 }
+
+.app-accordion{
+  border-radius: 8px;
+  border: 2px solid var(--brand-white-color) !important;
+}
+
+
+/* Override the default Bootstrap styles for the accordion */
+.accordion-item {
+  background-color: var(--brand-primary-color) !important;
+  color:var(--brand-white-color) !important;
+}
+
+.accordion-button {
+  color: var(--brand-white-color) !important;
+  background-color: var(--brand-primary-color) !important;
+}
+
+
+.accordion-button:not(.collapsed) {
+  border: 2px solid var(--brand-white-color) !important;
+}
+
+.accordion-button .collapsed::before, .accordion-button .collapsed::after
+{
+  color: var(--brand-white-color) !important;
+  background-image: url("./assets/arrow.svg") !important;
+}
+
+
+/* Set the color of visited accordion buttons */
+.accordion-button:focus, .accordion-button:hover {
+  color: var(--brand-white-color) !important;
+}
+
 
 
 
