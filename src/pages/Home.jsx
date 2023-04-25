@@ -16,6 +16,8 @@ import DemoImg4 from "./../assets/demo-4.svg";
 import DemoImg5 from "./../assets/demo-5.svg";
 import DemoImg6 from "./../assets/demo-3.svg";
 import AppCommunityCard from "../components/community-card";
+import AppPricingCard from "../components/pricing";
+
 const Home = () => {
   const communityUsers = [
     {
@@ -170,6 +172,28 @@ const Home = () => {
         <section className="container">
           <section className="community-section row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {allUsersCommentAndRating && allUsersCommentAndRating}
+          </section>
+        </section>
+        <br/>
+
+        <h3 className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2">
+          pricing
+        </h3>
+        <section className="pricing-container container p-md-0 p-4">
+          <section className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <AppPricingCard cardTitle="free plan">
+              <section className="my-5 py-5">
+                <br />
+                <br />
+              </section>
+            </AppPricingCard>
+
+            <AppPricingCard cardTitle="paid plan">
+              <section className="my-5 py-5">
+                <br />
+                <br />
+              </section>
+            </AppPricingCard>
           </section>
         </section>
       </section>

@@ -125,9 +125,14 @@ html, body{
 }
 
 
-.user-case-container{
+.user-case-container, .pricing-card{
   border: 2px solid var(--brand-white-color);
   border-radius:16px;
+}
+
+.pricing-card
+{
+  border-radius: var(--brand-button-border-radius);
 }
 
 
