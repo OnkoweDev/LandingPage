@@ -29,6 +29,8 @@ html, body{
     --brand-small-text: 0.65rem;
     --brand-small-text-3: 0.84rem;
     --brand-small-text-2: 1.1rem;
+    --brand-star-color:#FABF2A;
+    --brand-community-card-color:#001633;
 }
 
 
@@ -37,6 +39,12 @@ html, body{
 .brand-primary-bg-color
 {
   background: var(--brand-primary-color);
+}
+
+.brand-community-card-bg-color
+{
+  background: var(--brand-community-card-color) !important;
+  border-radius:8px;
 }
 
 
