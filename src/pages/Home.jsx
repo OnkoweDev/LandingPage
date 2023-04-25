@@ -4,6 +4,10 @@ import AppHero from "../components/hero";
 import ProductImg from "./../assets/product.svg";
 import LandingPageImg from "./../assets/landing-page.svg";
 import UserCaseContainer from "../components/user-case";
+import GirlWithLaptopImg from "./../assets/girlWithLaptop.svg";
+import IpadImg from "./../assets/ipad.svg";
+import AppSubHeroSection from "../components/sub-hero";
+import EbookImg from "./../assets/ebook.svg";
 import { Button } from "react-bootstrap";
 const Home = () => {
   return (
@@ -20,7 +24,7 @@ const Home = () => {
             headerText={"product description generator"}
             className="mx-3 my-3"
           >
-            <p  className="px-1 brand-small-text-3 text-muted">
+            <p className="px-1 brand-small-text-3 text-muted">
               With so much that has to be done almost at the same time , it
               could be very challenging operating operating an ecommerce
               business. One of the most important things to be done is to
@@ -39,7 +43,7 @@ const Home = () => {
             headerText={"product description generator"}
             className="mx-3 my-3"
           >
-            <p  className="px-1 brand-small-text-3 text-muted">
+            <p className="px-1 brand-small-text-3 text-muted">
               The goal every of every marketer is for their marketing campaign
               to convert as many audiences as possible, and for their conversion
               goal to the met, a lot of work has to go into the campaign. A
@@ -52,6 +56,45 @@ const Home = () => {
             </Button>
           </UserCaseContainer>
         </section>
+        <section className="sub-hero-section-container d-flex align-items-center justify-content-around flex-column mx-3">
+          <AppSubHeroSection
+            headerImage={EbookImg}
+            headerText="share your work with other writers"
+            subHeroImage={IpadImg}
+            className={"my-5 py-4"}
+          >
+            <p className="px-1 brand-small-text-3 text-muted">
+              Thousand of writers, bloggers, and marketers can rapidly create
+              100% original books with Olukowe’s Ebook authoring platform and
+              additionally, we’ll help you with the book publishing procedure.
+              Our AI assistance helps you in further refining and enhancing
+              either your blog posts or publications. Since we offer options for
+              how you wish to write the book, you can use a variety of methods.
+            </p>
+          </AppSubHeroSection>
+
+          <AppSubHeroSection
+            headerText="Finally, Writing is no longer a challenging task."
+            subHeroImage={GirlWithLaptopImg}
+          >
+            <p className="px-1 brand-small-text-3 text-muted">
+              Working with a team makes work easier and accelerates the time
+              taken to get a project completed . Do you want to delegate parts
+              of a whole project to members of your team and make them work on
+              it concurrently? What about having a team that evaluates your
+              project at the same as you are doing your work. Olukeowe makes
+              working with a team easier as barriers to physical meetings are
+              removed while working with a team on real-time writing projects.
+            </p>
+
+            <Button className="brand-custom-button text-capitalize brand-small-text-3 px-3 my-3">
+              learn more
+            </Button>
+          </AppSubHeroSection>
+        </section>
+          <section className="community-section">
+            
+          </section>
       </section>
     </React.Fragment>
   );
