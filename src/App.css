@@ -23,7 +23,7 @@
     --brand-button-border-radius: 30px;
     --brand-white-color:#FCFCFC;
     --brand-small-text: 0.65rem;
-    --brand-small-text-2: 0.8rem;
+    --brand-small-text-2: 1.1rem;
 }
 
 
@@ -43,11 +43,23 @@
 
 .brand-small-text-2
 {
-  font-size: var(--brand-small-text) !important;
+  font-size: var(--brand-small-text-2) !important;
 }
 .brand-white-text
 {
   color: var(--brand-white-color) !important;
+}
+
+/*default bootstrap navbar properties @overide*/
+
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0;
+	box-shadow: none;
+}
+.navbar-toggler
+{
+  border:none;
 }
 .header-dropdown > li
 {
@@ -74,9 +86,34 @@
   transition:.9s;
 }
 
+.get-started-button
+{
+  transition:1s;
+  opacity: .9;
+}
+
+.get-started-button:hover{
+  opacity: 1;
+}
+
 .brand-custom-button-outline:hover
 {
   background:var(--brand-secondary-color) !important;
+
+}
+
+
+
+
+/*custom responsiveness*/
+@media (min-width: 667.98px) {
+	.width-toggle {
+		width: 50%;
+		
+	}
+	
+
+
 
 }
 

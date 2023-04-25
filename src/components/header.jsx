@@ -7,10 +7,10 @@ const AppHeader = () => {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-md navbar-dark brand-primary-bg-color "
+        className="navbar navbar-expand-lg navbar-dark brand-primary-bg-color "
         aria-label="Olukowe Header"
       >
-        <div className="container-fluid mx-md-4">
+        <div className="container-fluid mx-md-4 m-3">
           <img
             src={AppLogo}
             alt="Olukowe Logo"
@@ -18,12 +18,12 @@ const AppHeader = () => {
             width={40}
             height={40}
           />
-          <a
-            className="navbar-brand text-capitalize fw-bold px-2 text-start"
-            href="#"
+          <Link
+            className="navbar-brand text-capitalize fw-bold px-2 text-start d-lg-block d-none"
+            to=""
           >
             Olukowe
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,7 +33,18 @@ const AppHeader = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              strokeWidth="0"
+              viewBox="0 0 24 24"
+              className="text-light"
+              height="35"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+            </svg>
           </button>
 
           <div
@@ -41,6 +52,12 @@ const AppHeader = () => {
             id="olukoweHeader"
           >
             <ul className="navbar-nav me-auto mb-2 mb-md-0 d-flex ">
+              <Link
+                className="navbar-brand text-capitalize fw-bold text-start d-lg-none d-block"
+                to=""
+              >
+                Olukowe
+              </Link>
               <li className="nav-item">
                 <Link
                   className="nav-link active text-capitalize brand-white-text"
@@ -90,7 +107,10 @@ const AppHeader = () => {
               </li>
             </ul>
 
-            <form className="d-flex align-items-center mx-md-5" role="search">
+            <form
+              className="d-flex align-items-center mx-lg-5 my-lg-0 my-1"
+              role="search"
+            >
               <Button className="text-capitalize  brand-custom-button-outline px-4 fw-bold brand-small-text text-center">
                 login
               </Button>
