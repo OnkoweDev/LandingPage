@@ -169,7 +169,16 @@ html, body{
 }
 
 
+.newsletter-section{
+  border:2px solid var(--brand-white-color) !important;
+  border-radius: 34px;
+}
 
+.newsletter-email-input{
+  border-radius: var(--brand-button-border-radius);
+  background: var(--brand-primary-color) !important;
+  border:1px solid var(--brand-secondary-color);
+}
 
 /*custom responsiveness*/
 @media (min-width: 667.98px) {
@@ -178,7 +187,15 @@ html, body{
 		
 	}
 	
+.width-toggle-2
+{
+  width: 60%;
+}
 
+.width-toggle-3
+{
+  width:70%;
+}
 
 
 }

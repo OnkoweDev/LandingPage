@@ -18,6 +18,8 @@ import DemoImg6 from "./../assets/demo-3.svg";
 import AppCommunityCard from "../components/community-card";
 import AppPricingCard from "../components/pricing";
 import AppFaq from "../components/faq";
+import AppNewsLetter from "../components/newsletter";
+
 const Home = () => {
   const communityUsers = [
     {
@@ -202,7 +204,7 @@ const Home = () => {
           frequently asked questions
         </h3>
 
-        <section className="container faq-container brand-primary-bg-color">
+        <section className="container faq-container brand-primary-bg-color width-toggle-3">
           <AppFaq
             eventKey={"0"}
             accordionHeader={"How many people can I share my writing with?"}
@@ -230,6 +232,10 @@ const Home = () => {
             eventKey={"4"}
             accordionHeader={"How does your pricing work?"}
           ></AppFaq>
+        </section>
+        <br/><br/>
+        <section className="newsletter-container container m-auto ">
+          <AppNewsLetter></AppNewsLetter>
         </section>
       </section>
     </React.Fragment>
