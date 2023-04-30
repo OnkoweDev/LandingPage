@@ -1,5 +1,5 @@
 import React from "react";
-import AppHeroImage from "./../assets/hero-img.svg";
+import AppHeroImage from "./../assets/hero-image.png";
 import { Button } from "react-bootstrap";
 import AppHeroWave from "./../assets/hero-wave.svg";
 const AppHero = () => {
