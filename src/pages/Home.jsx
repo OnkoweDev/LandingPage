@@ -102,7 +102,7 @@ const Home = () => {
         <h1 className="fs-1 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2">
           use case
         </h1>
-        <section className=" usercase-section d-flex flex-md-row flex-column  align-items-center justify-content-around  my-4">
+        <section className="usercase-section d-flex flex-md-row flex-column  align-items-center justify-content-around  my-4">
           <UserCaseContainer
             image={ProductImg}
             headerText={"product description generator"}

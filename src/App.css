@@ -31,6 +31,7 @@ html, body{
     --brand-small-text-2: 1.1rem;
     --brand-star-color:#FABF2A;
     --brand-community-card-color:#001633;
+    --brand-alt-hero-background: linear-gradient(108.8deg, #000715 -16.56%, #000B1A -4.44%, #000C1C 25.25%, #001426 38.42%, #003959 62.52%, #003452 79.91%, #00293F 93.23%, #001A26 107.6%);
 }
 
 
@@ -68,6 +69,10 @@ html, body{
   color: var(--brand-white-color) !important;
 }
 
+.brand-alt-hero-bg-color{
+  background: var(--brand-alt-hero-background) !important;
+}
+
 /*default bootstrap navbar properties @overide*/
 
 .navbar-toggler:focus {
@@ -89,6 +94,11 @@ html, body{
 }
 .header-dropdown > li :hover{
   background: var(--brand-secondary-color);
+}
+
+.navbar-custom-border{
+  border-bottom: 4px solid var(--brand-secondary-color);
+ 
 }
 
 /* utility classes for site buttons */

@@ -6,6 +6,7 @@ import UsersCase from "./pages/UsersCase";
 import Pricing from "./pages/Pricing";
 import Community from "./pages/Community";
 
+
 const App = () =>{
   return (
     <BrowserRouter>
@@ -14,7 +15,7 @@ const App = () =>{
         <Route path="home" element={<Home />}></Route>
         <Route path="community" element={<Community />}></Route>
         <Route path="pricing" element={<Pricing />}></Route>
-        <Route path="userscase" element={<UsersCase />}></Route>
+        <Route path="usecase" element={<UsersCase />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

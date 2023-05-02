@@ -1,9 +1,15 @@
 import React from "react";
+import AppHeader from "./../components/header";
 
 const Pricing = () => {
   return (
     <React.Fragment>
-      <section>here is the Pricing section.</section>
+      <section
+        className="brand-primary-bg-color"
+        style={{ overflowX: "hidden" }}
+      >
+        <AppHeader pricingPage={true} />
+      </section>
     </React.Fragment>
   );
 };

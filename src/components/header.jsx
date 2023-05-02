@@ -3,13 +3,13 @@ import AppLogo from "./../assets/logo.svg";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const AppHeader = () => {
+const AppHeader = ({userCasePage, pricingPage, className}) => {
   return (
     <React.Fragment>
       <nav
-        className="navbar navbar-expand-lg navbar-dark brand-primary-bg-color"
+        className={`navbar navbar-expand-lg navbar-dark brand-primary-bg-color ${className}`}
         aria-label="Olukowe Header"
-        
+      
       >
         <div className="container-fluid mx-md-4 m-3">
           <img
@@ -20,8 +20,8 @@ const AppHeader = () => {
             height={40}
           />
           <Link
-            className="navbar-brand text-capitalize fw-bold px-2 text-start d-lg-block d-none"
-            to=""
+            className="navbar-brand text-capitalize fw-bold px-2 text-start d-lg-block d-none "
+            to="/"
           >
             Olukowe
           </Link>
@@ -61,11 +61,13 @@ const AppHeader = () => {
               </Link>
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-capitalize brand-white-text"
+                  className={`nav-link active text-capitalize brand-white-text ${
+                    userCasePage && "navbar-custom-border"
+                  }`}
                   aria-current="page"
-                  to=""
+                  to="/usecase"
                 >
-                  users case
+                  use case
                 </Link>
               </li>
 
@@ -100,8 +102,10 @@ const AppHeader = () => {
 
               <li className="nav-item">
                 <Link
-                  className="nav-link text-capitalize brand-white-text"
-                  to=""
+                  className={`nav-link text-capitalize brand-white-text ${
+                    pricingPage && "navbar-custom-border"
+                  }`}
+                  to="/pricing"
                 >
                   pricing
                 </Link>
