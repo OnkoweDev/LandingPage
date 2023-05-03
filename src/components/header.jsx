@@ -1,8 +1,10 @@
 import AppLogo from "./../assets/logo.svg";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AppHeader = ({userCasePage, pricingPage, className, children}) => {
+  const navigateTo = useNavigate();
   return (
     <section className={`${className}`}>
       <nav
@@ -16,9 +18,10 @@ const AppHeader = ({userCasePage, pricingPage, className, children}) => {
             className="img-fluid"
             width={40}
             height={40}
+            onClick={navigateTo("/")}
           />
           <Link
-            className="navbar-brand text-capitalize fw-bold px-2 text-start d-lg-block d-none "
+            className="navbar-brand text-capitalize fw-bold px-2 text-start d-lg-block d-none text-light fs-3"
             to="/"
           >
             Olukowe
@@ -52,7 +55,7 @@ const AppHeader = ({userCasePage, pricingPage, className, children}) => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-md-0 d-flex ">
               <Link
-                className="navbar-brand text-capitalize fw-bold text-start d-lg-none d-block"
+                className="navbar-brand text-capitalize fw-bold text-start d-lg-none d-block fs-3 text-light"
                 to=""
               >
                 Olukowe
