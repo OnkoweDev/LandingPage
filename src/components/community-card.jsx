@@ -5,7 +5,7 @@ import { faStar  } from "@fortawesome/free-solid-svg-icons";
 const AppCommunityCard = ({image, profileName, profileJob, rating, children}) => {
   return (
     <React.Fragment>
-      <section className="card shadow brand-community-card-bg-color py-5 mt-5 m-auto" style={{"width":"390px", "height":"220px"}}>
+      <section className="card shadow-lg brand-community-card-bg-color py-5 mt-5 m-auto" style={{"width":"390px", "height":"220px"}}>
         <section className="community-card-header w-100 d-flex align-items-center justify-content-between">
           <section className="community-card-profile d-flex align-items-center ">
             <img

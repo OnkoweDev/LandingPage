@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import AppHeader from "../components/header";
 import AppHero from "../components/hero";
 import ProductImg from "./../assets/product.svg";
@@ -21,15 +21,12 @@ import AppFaq from "../components/faq";
 import AppNewsLetter from "../components/newsletter";
 import AppFooterSection from "../components/footer";
 import AOS from "aos";
-const Home = () => {  
-  
+const Home = () => {
   /*Init the AOS library */
-  useEffect(()=>{
-    
+  useEffect(() => {
     AOS.init();
-    
   }, []);
- const communityUsers = [
+  const communityUsers = [
     {
       id: 1,
       name: "Jessica",
@@ -83,14 +80,20 @@ const Home = () => {
       comment: "As a writer, Olukowe has helped me create some amazing content",
     },
   ];
-  const allUsersCommentAndRating = communityUsers.map(
-    (communityUser) => {
-      const {id, image, name, job, rating, comment} = communityUser;
-      return (<AppCommunityCard key={id} image={image} profileName={name} profileJob={job} rating={rating} >
+  const allUsersCommentAndRating = communityUsers.map((communityUser) => {
+    const { id, image, name, job, rating, comment } = communityUser;
+    return (
+      <AppCommunityCard
+        key={id}
+        image={image}
+        profileName={name}
+        profileJob={job}
+        rating={rating}
+      >
         {comment}
-      </AppCommunityCard>);
-    }
-  );
+      </AppCommunityCard>
+    );
+  });
   return (
     <React.Fragment>
       <section
@@ -192,6 +195,7 @@ const Home = () => {
             </Button>
           </AppSubHeroSection>
         </section>
+
         <h3
           className="fs-3 text-capitalize fw-bold brand-white-text text-center my-md-4 my-3 py-md-3 py-2"
           data-aos="slide-up"

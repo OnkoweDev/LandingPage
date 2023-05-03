@@ -1,15 +1,13 @@
-import React from "react";
 import AppLogo from "./../assets/logo.svg";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const AppHeader = ({userCasePage, pricingPage, className}) => {
+const AppHeader = ({userCasePage, pricingPage, className, children}) => {
   return (
-    <React.Fragment>
+    <section className={`${className}`}>
       <nav
-        className={`navbar navbar-expand-lg navbar-dark brand-primary-bg-color ${className}`}
+        className={`navbar navbar-expand-lg`}
         aria-label="Olukowe Header"
-      
       >
         <div className="container-fluid mx-md-4 m-3">
           <img
@@ -126,7 +124,8 @@ const AppHeader = ({userCasePage, pricingPage, className}) => {
           </div>
         </div>
       </nav>
-    </React.Fragment>
+      {children}
+    </section>
   );
 };
 
