@@ -155,7 +155,7 @@ const Home = () => {
             className={"my-5 py-4"}
           >
             <p
-              className="px-1 brand-small-text-3 text-muted"
+              className="px-1 brand-small-text-3 text-white-100 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >

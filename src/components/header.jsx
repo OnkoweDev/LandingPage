@@ -117,12 +117,17 @@ const AppHeader = ({userCasePage, pricingPage, className, children}) => {
               className="d-flex align-items-center mx-lg-5 my-lg-0 my-1"
               role="search"
             >
-              <Button className="text-capitalize  brand-custom-button-outline px-4 fw-bold brand-small-text text-center">
-                login
-              </Button>
-              <Button className="text-capitalize brand-custom-button px-4 mx-4 fw-bold brand-small-text text-center">
-                sign up
-              </Button>
+                  <Link to="https://dashboard.olukowe.co" target="_blank" rel="noopener noreferrer">
+                  <Button className="text-capitalize brand-custom-button px-4 mx-4 fw-bold brand-small-text text-center">
+                    Login
+                  </Button>
+                </Link>
+
+                <Link to="https://dashboard.olukowe.co/sign-up" target="_blank" rel="noopener noreferrer">
+                  <Button className="text-capitalize brand-custom-button px-4 mx-4 fw-bold brand-small-text text-center">
+                    Sign Up
+                  </Button>
+                </Link>
             </form>
           </div>
         </div>
