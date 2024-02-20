@@ -68,16 +68,16 @@ const Home = () => {
       job: "technical writer",
       rating: 4.8,
       image: DemoImg5,
-      comment: "As a writer, Olukowe has helped me create some amazing content",
+      comment: "As a Blogger, Olukowe has helped me create some amazing write up",
     },
 
     {
       id: 6,
-      name: "Williams",
+      name: "James",
       job: "technical writer",
       rating: 4.9,
       image: DemoImg6,
-      comment: "As a writer, Olukowe has helped me create some amazing content",
+      comment: "Olukowe has helped me create wonderfull and amazing content on all my post",
     },
   ];
   const allUsersCommentAndRating = communityUsers.map((communityUser) => {
