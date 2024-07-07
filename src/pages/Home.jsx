@@ -21,6 +21,8 @@ import AppFaq from "../components/faq";
 import AppNewsLetter from "../components/newsletter";
 import AppFooterSection from "../components/footer";
 import AOS from "aos";
+import PriceCard from "../components/PriceCard";
+import '../components/contain.css'
 const Home = () => {
   /*Init the AOS library */
   useEffect(() => {
@@ -218,28 +220,80 @@ const Home = () => {
           pricing
         </h3>
         <section className="pricing-container container p-md-0 p-4">
-          <section className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <AppPricingCard
-              cardTitle="free plan"
+          <section className="con">
+            {/* <AppPricingCard
+              cardTitle="STARTER PLAN ($10)"
               data-aos="flip-left"
               data-aos-duration="1000"
             >
               <section className="my-5 py-5">
-                <br />
-                <br />
+                
+                <div className="text-white text-center font-bold uppercase">
+                  <p>100k Words</p>
+                  <p>20 Image Generation</p>
+                  <p>3hrs Audio Transcription</p>
+                </div>
+                <hr className="" />
+               
               </section>
-            </AppPricingCard>
-
-            <AppPricingCard
-              cardTitle="paid plan"
+            </AppPricingCard> */}
+            {/* <AppPricingCard
+              cardTitle="ELITE PLAN ($15)"
               data-aos="flip-right"
               data-aos-duration="1000"
             >
               <section className="my-5 py-5">
-                <br />
-                <br />
+                <div className="text-white text-center font-bold uppercase">
+                    <p>100k Words</p>
+                    <p>20 Image Generation</p>
+                    <p>3hrs Audio Transcription</p>
+                  </div>
               </section>
             </AppPricingCard>
+
+            <AppPricingCard
+              cardTitle="PROFESSIONAL PLAN ($25)"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <section className="my-5 py-5">
+                 <div className="text-white text-center font-bold uppercase">
+                    <p>100k Words</p>
+                    <p>20 Image Generation</p>
+                    <p>3hrs Audio Transcription</p>
+                  </div>
+              </section>
+            </AppPricingCard> */}
+            <PriceCard 
+              data-aos="flip-right"
+              data-aos-duration="1000" 
+              title='STARTER PLAN' 
+              amount='$10' 
+              feature1='100k Words' 
+              feature2='20 Image Generation' 
+              feature3='3hrs Audio Transcription' />
+
+            <PriceCard 
+              data-aos="flip-right"
+              data-aos-duration="1000" 
+              title='ELITE PLAN' 
+              amount='$15' 
+              feature1='150k Words' 
+              feature2='27 Image Generation' 
+              feature3='5hrs Audio Transcription' />
+
+            <PriceCard 
+              data-aos="flip-right"
+              data-aos-duration="1000"  
+              title='PRO PLAN' 
+              amount='$25' feature1='250k Words' 
+              feature2='40 Image Generation' 
+              feature3='10hrs Audio Transcription' />
+            
+
+
+            
+
           </section>
         </section>
         <br />

@@ -5,6 +5,9 @@ import PricingContainer from "../components/PricingContainer";
 import AppPricingCard from "../components/pricing";
 import AppFaq from "../components/faq";
 import AppFooterSection from "../components/footer";
+import PriceCard from "../components/PriceCard";
+import '../components/contain.css'
+
 const Pricing = () => {
   return (
     <React.Fragment>
@@ -13,29 +16,25 @@ const Pricing = () => {
           <AltHero heroSectionName={"PRICING"} />
         </AppHeader>
 
-        <PricingContainer
-          className={
-            "bg-light d-flex align-items-center justify-content-around flex-md-row flex-column w-100"
-          }
-        >
-          <AppPricingCard
-            className={"bg-light custom-pricing-card p-5 my-3 shadow"}
-          >
-            <h3 className="fs-3 fw-bold">$0/Month</h3>
+       
+          
+          <section className="pricing-container container p-md-0 p-4">
+          <section className="con">
+           
+            <PriceCard title='STARTER PLAN' amount='$10' feature1='100k Words' feature2='20 Image Generation' feature3='3hrs Audio Transcription' />
 
-            <section className="my-5 py-5"></section>
-            <section className="my-2 py-2"></section>
-          </AppPricingCard>
+            <PriceCard title='ELITE PLAN' amount='$15' feature1='150k Words' feature2='27 Image Generation' feature3='5hrs Audio Transcription' />
 
-          <AppPricingCard
-            className={"bg-light custom-pricing-card p-5 my-3 shadow"}
-          >
-            <h3 className="fs-3 fw-bold">$0/Month</h3>
+            <PriceCard title='PRO PLAN' amount='$25' feature1='250k Words' feature2='40 Image Generation' feature3='10hrs Audio Transcription' />
+            
 
-            <section className="my-5 py-5"></section>
-            <section className="my-2 py-2"></section>
-          </AppPricingCard>
-        </PricingContainer>
+
+            
+
+          </section>
+        </section>
+
+        
         <section className="my-4"></section>
 
         <br />

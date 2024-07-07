@@ -42,7 +42,7 @@ const AppFooterSection = () => {
                 </li>
               </ul>
 
-              <section className="social-icons-container d-flex align-items-center justify-content-start my-3">
+              {/* <section className="social-icons-container d-flex align-items-center justify-content-start my-3">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="rounded-circle mx-1"
@@ -67,7 +67,7 @@ const AppFooterSection = () => {
                   size="xl"
                   color="dodgerblue"
                 />
-              </section>
+              </section> */}
             </div>
 
             <div className="col-lg-3 col-md-3 col-12 my-3">
@@ -190,27 +190,27 @@ const AppFooterSection = () => {
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="/pricing" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     pricing
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="https://dashboard.olukowe.co/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     login
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="https://dashboard.olukowe.co/sign-up" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     sign up
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     privacy and policy
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     terms and condition
                   </Link>
                 </li>
