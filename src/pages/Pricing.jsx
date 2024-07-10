@@ -5,6 +5,9 @@ import PricingContainer from "../components/PricingContainer";
 import AppPricingCard from "../components/pricing";
 import AppFaq from "../components/faq";
 import AppFooterSection from "../components/footer";
+import PriceCard from "../components/PriceCard";
+import '../components/contain.css'
+
 const Pricing = () => {
   return (
     <React.Fragment>
@@ -13,29 +16,25 @@ const Pricing = () => {
           <AltHero heroSectionName={"PRICING"} />
         </AppHeader>
 
-        <PricingContainer
-          className={
-            "bg-light d-flex align-items-center justify-content-around flex-md-row flex-column w-100"
-          }
-        >
-          <AppPricingCard
-            className={"bg-light custom-pricing-card p-5 my-3 shadow"}
-          >
-            <h3 className="fs-3 fw-bold">$0/Month</h3>
+       
+          
+          <section className="pricing-container container p-md-0 p-4">
+          <section className="con">
+           
+            <PriceCard title='STARTER PLAN' amount='$10' feature1='100k Words' feature2='20 Image Generation' feature3='3hrs Audio Transcription' />
 
-            <section className="my-5 py-5"></section>
-            <section className="my-2 py-2"></section>
-          </AppPricingCard>
+            <PriceCard title='ELITE PLAN' amount='$15' feature1='150k Words' feature2='27 Image Generation' feature3='5hrs Audio Transcription' />
 
-          <AppPricingCard
-            className={"bg-light custom-pricing-card p-5 my-3 shadow"}
-          >
-            <h3 className="fs-3 fw-bold">$0/Month</h3>
+            <PriceCard title='PRO PLAN' amount='$25' feature1='250k Words' feature2='40 Image Generation' feature3='10hrs Audio Transcription' />
+            
 
-            <section className="my-5 py-5"></section>
-            <section className="my-2 py-2"></section>
-          </AppPricingCard>
-        </PricingContainer>
+
+            
+
+          </section>
+        </section>
+
+        
         <section className="my-4"></section>
 
         <br />
@@ -53,29 +52,29 @@ const Pricing = () => {
             eventKey={"0"}
             accordionHeader={"How many people can I share my writing with?"}
             className=""
-          ></AppFaq>
+          >You can share your writing with as many people as you want</AppFaq>
 
           <AppFaq
             eventKey={"1"}
             accordionHeader={
               "If I subscribe to a monthly plan, will I be charged automatically next month?"
             }
-          ></AppFaq>
+          >Yes, our subscription is set to auto-renew by default. However, you can disable auto-renewal at any time.</AppFaq>
           <AppFaq
             eventKey={"2"}
             accordionHeader={
               "How is the pricing of Olukowe compare with Jasper?"
             }
-          ></AppFaq>
+          >Our pricing is competitive compared to many other competitors in the market.</AppFaq>
           <AppFaq
             eventKey={"3"}
             accordionHeader={"Can I translate with Olukowe?"}
-          ></AppFaq>
+          >Yes, you can translate into more than 20 languages, and we are continuously adding more</AppFaq>
 
           <AppFaq
             eventKey={"4"}
             accordionHeader={"How does your pricing work?"}
-          ></AppFaq>
+          >Our pricing operates on a subscription model.</AppFaq>
         </section>
         <br />
         <section className="my-5 py-5"></section>

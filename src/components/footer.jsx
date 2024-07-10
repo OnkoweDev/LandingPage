@@ -43,13 +43,15 @@ const AppFooterSection = () => {
               </ul>
 
               <section className="social-icons-container d-flex align-items-center justify-content-start my-3">
+                <Link to='https://x.com/OlukoweApp'>
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="rounded-circle mx-1"
                   size="xl"
                   color="dodgerblue"
                 />
-                <FontAwesomeIcon
+                </Link>
+                {/* <FontAwesomeIcon
                   icon={faLinkedin}
                   className="rounded-circle mx-4"
                   size="xl"
@@ -66,7 +68,7 @@ const AppFooterSection = () => {
                   className="rounded-circle mx-3"
                   size="xl"
                   color="dodgerblue"
-                />
+                /> */}
               </section>
             </div>
 
@@ -77,7 +79,7 @@ const AppFooterSection = () => {
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
                   <Link
-                    to=""
+                    to="/usecase"
                     className="nav-link p-0 text-muted brand-small-text-3"
                   >
                     Ebook Writing
@@ -85,7 +87,7 @@ const AppFooterSection = () => {
                 </li>
                 <li className="nav-item mb-2">
                   <Link
-                    to=""
+                    to="/usecase"
                     className="nav-link p-0 text-muted brand-small-text-3"
                   >
                     Blog Intro Generation
@@ -93,7 +95,7 @@ const AppFooterSection = () => {
                 </li>
                 <li className="nav-item mb-2">
                   <Link
-                    to=""
+                    to="/usecase"
                     className="nav-link p-0 text-muted brand-small-text-3"
                   >
                     Blog Section Generation
@@ -101,13 +103,13 @@ const AppFooterSection = () => {
                 </li>
                 <li className="nav-item mb-2">
                   <Link
-                    to=""
+                    to="/usecase"
                     className="nav-link p-0 text-muted brand-small-text-3"
                   >
                     Blog Article Writer
                   </Link>
                 </li>
-                <li className="nav-item mb-2">
+                {/* <li className="nav-item mb-2">
                   <Link
                     to=""
                     className="nav-link p-0 text-muted brand-small-text-3"
@@ -180,7 +182,7 @@ const AppFooterSection = () => {
                   >
                     Paragraph Writer
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -190,30 +192,30 @@ const AppFooterSection = () => {
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="/pricing" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     pricing
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="https://dashboard.olukowe.co/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     login
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="https://dashboard.olukowe.co/sign-up" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     sign up
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  <Link to="/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     privacy and policy
                   </Link>
                 </li>
-                <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                {/* <li className="nav-item mb-2">
+                  <Link to="/" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     terms and condition
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -223,19 +225,14 @@ const AppFooterSection = () => {
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
-                    contact us
+                  <Link to="https://hello@olukowe.co" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                    contact us at hello@olukowe.co
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
-                    FAQ
-                  </Link>
-                </li>
-                <li className="nav-item mb-2">
-                  <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
+                  {/* <Link to="" className="nav-link p-0 text-muted brand-small-text-3 text-capitalize">
                     @Olukowe
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </div>
