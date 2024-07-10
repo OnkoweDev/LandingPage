@@ -157,16 +157,19 @@ const Home = () => {
             className={"my-5 py-4"}
           >
             <p
-              className="px-1 brand-small-text-3 text-white-100 text-muted"
+              className="px-1 para  brand-small-text-3 text-white-100 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Thousand of writers, bloggers, and marketers can rapidly create
-              100% original books with Olukowe’s Ebook authoring platform and
-              additionally, we’ll help you with the book publishing procedure.
-              Our AI assistance helps you in further refining and enhancing
-              either your blog posts or publications. Since we offer options for
-              how you wish to write the book, you can use a variety of methods.
+              Thousands of writers, bloggers, and marketers can rapidly create 100% original books with Olukowe’s Ebook authoring platform. This innovative platform is designed to simplify the book creation process, allowing users to produce high-quality content quickly and efficiently.
+
+              In addition to the authoring capabilities, Olukowe’s platform also provides comprehensive support with the book publishing procedure. Whether you are a first-time author or an experienced writer, our platform offers the tools and resources you need to navigate the publishing landscape successfully.
+
+              One of the standout features of Olukowe’s platform is its AI assistance. Our advanced AI technology aids in further refining and enhancing your content, whether it's blog posts or full-length publications. The AI can suggest improvements, correct errors, and ensure that your writing is polished and professional.
+
+              Moreover, Olukowe’s platform offers various options for how you wish to write your book. You can choose from different writing methods and tools, tailored to fit your unique style and workflow. Whether you prefer to write from scratch, use templates, or dictate your content, our platform accommodates your needs, making the writing process as seamless as possible.
+
+               Olukowe’s Ebook authoring platform empowers writers, bloggers, and marketers to create original content with ease. With robust AI assistance and comprehensive publishing support, our platform ensures that your writing projects are not only completed efficiently but also meet the highest standards of quality
             </p>
           </AppSubHeroSection>
 
@@ -175,17 +178,17 @@ const Home = () => {
             subHeroImage={GirlWithLaptopImg}
           >
             <p
-              className="px-1 brand-small-text-3 text-muted"
+              className="px-1 py-8 brand-small-text-3 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
-              Working with a team makes work easier and accelerates the time
-              taken to get a project completed . Do you want to delegate parts
-              of a whole project to members of your team and make them work on
-              it concurrently? What about having a team that evaluates your
-              project at the same as you are doing your work. Olukeowe makes
-              working with a team easier as barriers to physical meetings are
-              removed while working with a team on real-time writing projects.
+              Working with a team makes work easier and significantly accelerates project completion. If you want to delegate parts of a project to different team members and have them work on their tasks concurrently, Olukowe is the perfect solution. Our platform supports seamless team collaboration, allowing multiple users to work on the same project in real-time, regardless of their physical location.
+
+              With Olukowe, you can efficiently assign specific tasks to various team members, ensuring that each part of the project is handled by the right person. This collaborative approach not only speeds up the project timeline but also leverages the diverse skills and expertise of your team, leading to a more comprehensive and high-quality outcome.
+
+              Moreover, Olukowe facilitates continuous evaluation and feedback. Your team can review and provide input on each other's work as it progresses, enabling a dynamic and interactive development process. This constant feedback loop helps identify potential issues early, ensuring that the final product meets or exceeds expectations.
+
+              The platform's real-time capabilities eliminate the need for physical meetings, breaking down geographical barriers and enabling effective remote collaboration. This flexibility is particularly beneficial in today's globalized and often remote-working environment, where team members may be scattered across different locations and time zones.
             </p>
 
             <Button
@@ -311,29 +314,29 @@ const Home = () => {
             eventKey={"0"}
             accordionHeader={"How many people can I share my writing with?"}
             className=""
-          ></AppFaq>
+          >You can share your writing with as many people as you want</AppFaq>
 
           <AppFaq
             eventKey={"1"}
             accordionHeader={
               "If I subscribe to a monthly plan, will I be charged automatically next month?"
             }
-          ></AppFaq>
+          >Yes, our subscription is set to auto-renew by default. However, you can disable auto-renewal at any time.</AppFaq>
           <AppFaq
             eventKey={"2"}
             accordionHeader={
               "How is the pricing of Olukowe compare with Jasper?"
             }
-          ></AppFaq>
+          >Our pricing is competitive compared to many other competitors in the market.</AppFaq>
           <AppFaq
             eventKey={"3"}
             accordionHeader={"Can I translate with Olukowe?"}
-          ></AppFaq>
+          >Yes, you can translate into more than 20 languages, and we are continuously adding more</AppFaq>
 
           <AppFaq
             eventKey={"4"}
             accordionHeader={"How does your pricing work?"}
-          ></AppFaq>
+          >Our pricing operates on a subscription model.</AppFaq>
         </section>
         <br />
         <br />

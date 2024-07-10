@@ -52,29 +52,29 @@ const Pricing = () => {
             eventKey={"0"}
             accordionHeader={"How many people can I share my writing with?"}
             className=""
-          ></AppFaq>
+          >You can share your writing with as many people as you want</AppFaq>
 
           <AppFaq
             eventKey={"1"}
             accordionHeader={
               "If I subscribe to a monthly plan, will I be charged automatically next month?"
             }
-          ></AppFaq>
+          >Yes, our subscription is set to auto-renew by default. However, you can disable auto-renewal at any time.</AppFaq>
           <AppFaq
             eventKey={"2"}
             accordionHeader={
               "How is the pricing of Olukowe compare with Jasper?"
             }
-          ></AppFaq>
+          >Our pricing is competitive compared to many other competitors in the market.</AppFaq>
           <AppFaq
             eventKey={"3"}
             accordionHeader={"Can I translate with Olukowe?"}
-          ></AppFaq>
+          >Yes, you can translate into more than 20 languages, and we are continuously adding more</AppFaq>
 
           <AppFaq
             eventKey={"4"}
             accordionHeader={"How does your pricing work?"}
-          ></AppFaq>
+          >Our pricing operates on a subscription model.</AppFaq>
         </section>
         <br />
         <section className="my-5 py-5"></section>

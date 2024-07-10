@@ -4,3 +4,8 @@
     align-items: center;
     margin: 0;
 }
+
+.para {
+    padding: 20px;
+    line-height: 25px;
+}

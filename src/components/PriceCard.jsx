@@ -14,7 +14,7 @@ const PriceCard = ({title,amount,feature1,feature2,feature3}) => {
                 <li>{feature2}</li>
                 <li>{feature3}</li>
             </ul>
-            <a href='https://dashboard.olukowe.co/' className="cta-button">Start writing</a>
+            <a href='https://dashboard.olukowe.co/sign-up' className="cta-button">Start writing</a>
         </div>
     );
 }

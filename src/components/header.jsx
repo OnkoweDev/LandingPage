@@ -85,7 +85,7 @@ const AppHeader = ({userCasePage, pricingPage, className, children}) => {
                   <li>
                     <Link
                       className="dropdown-item text-capitalize text-light"
-                      to=""
+                      to="https://telegram.org/"
                     >
                       telegram
                     </Link>
@@ -93,7 +93,7 @@ const AppHeader = ({userCasePage, pricingPage, className, children}) => {
                   <li>
                     <Link
                       className="dropdown-item text-capitalize text-light"
-                      to=""
+                      to="https://discord.com/"
                     >
                       discord
                     </Link>
