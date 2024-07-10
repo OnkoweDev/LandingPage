@@ -181,6 +181,7 @@ const Home = () => {
               className="px-1 py-8 brand-small-text-3 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
+              
             >
               Working with a team makes work easier and significantly accelerates project completion. If you want to delegate parts of a project to different team members and have them work on their tasks concurrently, Olukowe is the perfect solution. Our platform supports seamless team collaboration, allowing multiple users to work on the same project in real-time, regardless of their physical location.
 
