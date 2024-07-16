@@ -157,7 +157,7 @@ const Home = () => {
             className={"my-5 py-4"}
           >
             <p
-              className="px-1 jus   brand-small-text-3 text-white-100 text-muted"
+              className="px-1 jus para  brand-small-text-2 text-white-100 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
@@ -167,9 +167,7 @@ const Home = () => {
               <br /> <br />
               One of the standout features of Olukowe’s platform is its AI assistance. Our advanced AI technology aids in further refining and enhancing your content, whether it's blog posts or full-length publications. The AI can suggest improvements, correct errors, and ensure that your writing is polished and professional.
               <br /> <br />
-              Moreover, Olukowe’s platform offers various options for how you wish to write your book. You can choose from different writing methods and tools, tailored to fit your unique style and workflow. Whether you prefer to write from scratch, use templates, or dictate your content, our platform accommodates your needs, making the writing process as seamless as possible.
-
-               Olukowe’s Ebook authoring platform empowers writers, bloggers, and marketers to create original content with ease. With robust AI assistance and comprehensive publishing support, our platform ensures that your writing projects are not only completed efficiently but also meet the highest standards of quality
+              
             </p>
           </AppSubHeroSection>
 
@@ -178,7 +176,7 @@ const Home = () => {
             subHeroImage={GirlWithLaptopImg}
           >
             <p
-              className="px-1 jus py-8 brand-small-text-3 text-muted"
+              className="px-1 jus para py-8 brand-small-text-2 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
 
@@ -187,10 +185,7 @@ const Home = () => {
                 <br /> <br />
               With Olukowe, you can efficiently assign specific tasks to various team members, ensuring that each part of the project is handled by the right person. This collaborative approach not only speeds up the project timeline but also leverages the diverse skills and expertise of your team, leading to a more comprehensive and high-quality outcome.
               <br /> <br />
-              Moreover, Olukowe facilitates continuous evaluation and feedback. Your team can review and provide input on each other's work as it progresses, enabling a dynamic and interactive development process. This constant feedback loop helps identify potential issues early, ensuring that the final product meets or exceeds expectations.
-
-              The platform's real-time capabilities eliminate the need for physical meetings, breaking down geographical barriers and enabling effective remote collaboration. This flexibility is particularly beneficial in today's globalized and often remote-working environment, where team members may be scattered across different locations and time zones.
-            </p>
+              </p>
 
             <Button
               className="brand-custom-button text-capitalize brand-small-text-3 px-3 my-4"

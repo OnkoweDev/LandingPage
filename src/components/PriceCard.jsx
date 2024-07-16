@@ -1,6 +1,6 @@
 // src/PriceCard.js
 import React from 'react';
-import './PriceCard.css';
+import './priceCard.css';
 
 const PriceCard = ({title,amount,feature1,feature2,feature3}) => {
     return (
