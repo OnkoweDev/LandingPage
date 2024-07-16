@@ -157,7 +157,7 @@ const Home = () => {
             className={"my-5 py-4"}
           >
             <p
-              className="px-1 jus para  brand-small-text-3 text-white-100 text-muted"
+              className="px-1 jus para  brand-small-text-2 text-white-100 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
@@ -176,7 +176,7 @@ const Home = () => {
             subHeroImage={GirlWithLaptopImg}
           >
             <p
-              className="px-1 jus para py-8 brand-small-text-3 text-muted"
+              className="px-1 jus para py-8 brand-small-text-2 text-muted"
               data-aos="zoom-in"
               data-aos-duration="1000"
 
